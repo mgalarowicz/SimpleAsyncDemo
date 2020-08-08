@@ -78,6 +78,7 @@ namespace WPFUserInterface
 
             foreach (string site in websites)
             {
+                //tasks.Add(Task.Run(() => DownloadWebsite(site)));
                 tasks.Add(DownloadWebsiteAsync(site));
             }
 
